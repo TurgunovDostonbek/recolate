@@ -53,4 +53,6 @@
   color: #000;
 }
 
-
+.navbar__menu {
+  display: none;
+}
