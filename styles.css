@@ -23,6 +23,12 @@
   padding-top: 15px;
   padding-bottom: 15px;
 }
+.navbar__logo,
+.navbar__logo--title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .navbar__logo--link {
   font-family: "Allison";
@@ -35,11 +41,14 @@
   color: #0ca296;
 }
 
-.navbar__links .navbar__links--item {
+.navbar__links,
+.navbar__links--item,
+.navbar__links--list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 25px;
+  margin-top: 6px;
 }
 
 .navbar__logo-link {
@@ -51,8 +60,51 @@
   text-align: right;
   text-transform: capitalize;
   color: #000;
+  position: relative;
+  text-decoration: none;
+}
+
+.navbar__logo-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #41d6c7;
+  transition: 0.3s;
+}
+
+.navbar__logo-link:hover::after {
+  width: 100%;
 }
 
 .navbar__menu {
   display: none;
+}
+
+@media (max-width: 520px) {
+  .navbar__menu {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar__menu--btn {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    margin-top: 20px;
+    transition: all 1s;
+  }
+
+  .navbar__menu--btn:hover {
+    transform: rotate(10deg);
+  }
+
+  .navbar__links {
+    display: none;
+  }
 }
