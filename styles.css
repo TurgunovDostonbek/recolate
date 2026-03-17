@@ -16,12 +16,13 @@
   padding-right: 10px;
 }
 
+/* ///// NAVBAR ///// */
 .navbar__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .navbar__logo,
 .navbar__logo--title {
@@ -83,6 +84,7 @@
   display: none;
 }
 
+/* ///// NAVBAR**MEDIA ///// */
 @media (max-width: 520px) {
   .navbar__menu {
     display: block;
@@ -107,4 +109,23 @@
   .navbar__links {
     display: none;
   }
+}
+
+/* ///// HERO ///// */
+
+.hero {
+  background-image: url("./img/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.hero__conatiner {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__title{
+  
 }
