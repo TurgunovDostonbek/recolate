@@ -121,11 +121,100 @@
   height: 100vh;
 }
 
-.hero__conatiner {
+.hero__container {
   display: flex;
   flex-direction: column;
+  justify-content: end;
 }
 
-.hero__title{
-  
+.hero__title {
+  font-family: "Allison";
+  font-weight: 400;
+  font-size: 240px;
+  line-height: 83%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffc700;
+  padding-top: 50px;
+}
+
+.hero__subtitle {
+  font-family: " sans-serif";
+  font-weight: 900;
+  font-size: 240px;
+  line-height: 76%;
+  letter-spacing: 0%;
+  vertical-align: bottom;
+  color: white;
+}
+
+/* ///// HERO**MEDIA ///// */
+
+@media (max-width: 880px) {
+  .hero__title {
+    font-family: "Allison";
+    font-weight: 400;
+    font-size: 200px;
+    line-height: 83%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #ffc700;
+    padding-top: 100px;
+  }
+
+  .hero__subtitle {
+    font-family: " sans-serif";
+    font-weight: 900;
+    font-size: 230px;
+    line-height: 76%;
+    letter-spacing: 0%;
+    vertical-align: bottom;
+    color: white;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero__title {
+    font-family: "Allison";
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 83%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #ffc700;
+    padding-top: 100px;
+  }
+
+  .hero__subtitle {
+    font-family: " sans-serif";
+    font-weight: 900;
+    font-size: 200px;
+    line-height: 76%;
+    letter-spacing: 0%;
+    vertical-align: bottom;
+    color: white;
+  }
+}
+
+@media (max-width: 550px) {
+  .hero__title {
+    font-family: "Allison";
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 83%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #ffc700;
+    padding-top: 100px;
+  }
+
+  .hero__subtitle {
+    font-family: " sans-serif";
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 76%;
+    letter-spacing: 0%;
+    vertical-align: bottom;
+    color: white;
+  }
 }
